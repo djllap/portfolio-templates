@@ -32,6 +32,9 @@ header {
   display: flex;
   flex-direction: row;
   padding: 0.5rem 0.5rem 0 0.5rem;
+  background-color: grey;
+  height: 2.5rem;
+  color:white;
 }
 
 footer {
@@ -39,6 +42,9 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  background-color: grey;
+  height: 2.5rem;
+  color: white;
 }
 
 main {
@@ -53,6 +59,8 @@ h1 {
   font-weight: inherit;
   margin-top: 1.5rem;
   font-size: 3rem;
+  background-color: grey;
+  color: white;
 }
 
 h2 {
@@ -249,16 +257,21 @@ ul {
 
 .pic-column {
   width: 45%;
+  height: 15rem;
+  color: black;
+  background-color: lightgray;
 }
 
 .pic-column img {
-  width: 100%;
+  width: 100%;  
 }
 
 .bio-column {
   padding-left: 0.75rem;
   font-size: 1.2rem;
-  width: 55%
+  width: 55%;
+  background-color: darkgray;
+  color: black;
 }
 
 .label {
@@ -268,7 +281,6 @@ ul {
 
 .bio-header {
   text-align: center;
-  /* color: #ff9900; */
   font-size: 1.5rem;
   width: 100%;
   padding-bottom: 0.75rem
@@ -294,6 +306,7 @@ ul {
   /* color: #ff9900; */
   padding: 0 0 0.5rem 0;
   font-size: 1.6rem;
+  background-color: darkgrey;
 }
 
 .project-subtitle {
@@ -325,7 +338,9 @@ ul {
 }
 
 .contact-section {
-  height: 100%
+  min-height: 50vh;
+  background-color: darkgrey;
+  color: white;
 }
 
 .contact-links-list {
@@ -351,4 +366,65 @@ ul {
   border-top-right-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
   padding-right: 0.75rem;
+}
+
+.full-bio {
+  background-color: grey;
+  color: white;
+  height: 12rem;
+}
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-image-div {
+  min-height: 20rem;
+  background-color: lightgray;
+  color: black;
+}
+
+.project-details {
+  background-color: grey;
+  color: white;
+}
+
+.project-details p {
+  color: white;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .big-container {
+    flex-direction: row;
+  }
+
+  .nav-bar {
+    width: 9rem;
+    padding: 0 0 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-label {
+    display: flex;
+    border-bottom: 3px solid black;
+  }
+
+  .nav-btn {
+    border-right: none;
+    border-bottom: 3px solid black;
+    max-height: 4.5rem;
+  }
+
+  .nav-bottom {
+    display: flex;
+  }
+
+  .empty-nav {
+    display: flex;
+  }
 }
